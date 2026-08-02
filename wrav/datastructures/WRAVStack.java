@@ -21,8 +21,7 @@ public class WRAVStack {
     }
 
     public String peek() {
-        if (isEmptyStack()) return null;
-        return stackTop.cargo;
+        return (isEmptyStack()) ? null : stackTop.cargo;
     }
 
     public String pop() {
